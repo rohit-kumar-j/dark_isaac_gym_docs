@@ -1,0 +1,427 @@
+@import url("theme.css");
+@import url("../pygments.css");
+
+body {
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    background-color: #1a1a1a;
+    color: #e4e4e7;
+}
+
+/* Force dark background on all content areas */
+.wy-nav-content {
+    background-color: #1a1a1a !important;
+}
+
+.rst-content {
+    background-color: #1a1a1a !important;
+}
+
+/* Default header fonts */
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend, p.caption {
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    color: #f4f4f5;
+}
+
+/* Sidebar navigation */
+.wy-nav-side {
+    background-color: #212121;
+}
+
+/* Search area */
+.wy-side-nav-search {
+    background-color: #0a0a0a;
+}
+
+/* Current menu item */
+.wy-menu-vertical li.toctree-l2.current>a {
+    background-color: #76b900 !important;
+    color: #ffffff !important;
+}
+
+/* Hover states */
+.wy-menu-vertical a:hover, .wy-menu-vertical li.current a:hover, .wy-menu-vertical li.toctree-l2.current>a:hover {
+    color: #ffffff !important;
+    background-color: #76b900 !important;
+}
+
+/* Main content area */
+@media screen and (min-width: 1400px) {
+    .wy-nav-content {
+        background-color: #1a1a1a !important;
+    }
+}
+
+.wy-nav-content-wrap {
+    background-color: #1a1a1a !important;
+}
+
+/* Ensure main section stays dark */
+section.wy-nav-content-wrap {
+    background-color: #1a1a1a !important;
+}
+
+div[role="main"] {
+    background-color: #1a1a1a !important;
+}
+
+/* Mobile header */
+.wy-nav-top {
+    background-color: #0a0a0a;
+    background-image: url('../modulus_logo_v7_64h.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0.4045em 0.809em;
+    color: #e4e4e7;
+}
+
+.wy-nav-top > a {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .wy-side-nav-search>a img.logo {
+        height: 60px;
+    }
+}
+
+/* Logo scaling */
+.wy-side-nav-search a {
+    display: block;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-color: #76b900;
+    background-color: #2a2a2a;
+    color: #e4e4e7;
+}
+
+.wy-side-nav-search input[type="text"]::placeholder {
+    color: #9ca3af;
+}
+
+/* Constructor styling */
+.rst-content dl:not(.docutils) dt {
+    display: table;
+    color: #a3d65e;
+    background-color: rgba(118, 185, 0, 0.15);
+    border-top-color: #76b900;
+}
+
+/* Code literals */
+.rst-content tt.literal, .rst-content code.literal {
+    color: #a3d65e !important;
+    background-color: #2a2a2a !important;
+}
+
+.rst-content tt.xref, a .rst-content tt, .rst-content tt.xref,
+.rst-content code.xref, a .rst-content code {
+    color: #a3d65e;
+}
+
+/* Link colors */
+a {
+    color: #8fca3f;
+}
+
+a:hover {
+    color: #a3d65e;
+}
+
+a:visited {
+    color: #76b900;
+}
+
+/* Menu links */
+.wy-menu a {
+    color: #c5c5d2;
+}
+
+.wy-menu a:hover {
+    color: #e4e4e7;
+}
+
+/* Footer */
+footer {
+    font-size: 80%;
+    background-color: #212121;
+    color: #9ca3af;
+}
+
+footer .rst-footer-buttons {
+    font-size: 125%;
+}
+
+footer p {
+    font-size: 100%;
+}
+
+/* Hidden sections */
+.rst-content .hidden-section {
+    display: none;
+}
+
+nav .hidden-section {
+    display: inherit;
+}
+
+.wy-side-nav-search>div.version {
+    color: #9ca3af;
+}
+
+/* Screenshot styling */
+.screenshot {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Table responsive override */
+@media screen and (min-width: 767px) {
+    .wy-table-responsive table td {
+        white-space: normal !important;
+    }
+    .wy-table-responsive {
+        overflow: visible !important;
+    }
+}
+
+/* Table styling for dark theme */
+.wy-table-bordered-all, .rst-content table.docutils {
+    border-color: #2a2a2a;
+}
+
+.wy-table-backed, .rst-content table.docutils thead, .rst-content table.field-list thead {
+    background-color: #2a2a2a;
+}
+
+.wy-table thead th, .rst-content table.docutils thead th, .rst-content table.field-list thead th {
+    color: #e4e4e7;
+}
+
+/* TOC headers */
+.wy-menu-vertical p.caption {
+    color: #8fca3f;
+}
+
+/* Image spacing */
+.wy-plain-list-decimal li, .rst-content img {
+    margin-bottom: 24px;
+}
+
+/* Admonitions */
+.rst-content .note .admonition-title, .rst-content .wy-alert-info.attention .admonition-title, .admonition .note {
+    background: #76b900;
+    color: #ffffff;
+}
+
+.rst-content .note, .rst-content .admonition {
+    background: #2a2a2a;
+    color: #e4e4e7;
+}
+
+/* Code blocks */
+.rst-content pre, .rst-content div[class^='highlight'] {
+    background-color: #212121;
+    border-color: #2a2a2a;
+}
+
+.rst-content pre code {
+    color: #e4e4e7;
+}
+
+/* Inline code */
+code {
+    background-color: #2a2a2a;
+    color: #a3d65e;
+    border: 1px solid #3a3a3a;
+}
+
+/* Breadcrumbs */
+.wy-breadcrumbs li a {
+    color: #8fca3f;
+}
+
+.wy-breadcrumbs li.wy-breadcrumbs-aside a {
+    color: #9ca3af;
+}
+
+/* Section headers in content */
+.rst-content h1, .rst-content h2, .rst-content h3, .rst-content h4, .rst-content h5, .rst-content h6 {
+    color: #f4f4f5;
+}
+
+/* Sidebar scrollbar (webkit) */
+.wy-side-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wy-side-scroll::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+.wy-side-scroll::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 4px;
+}
+
+.wy-side-scroll::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+}
+
+/* Dropdown menu styling */
+.wy-menu-vertical li.current {
+    background-color: #212121;
+}
+
+.wy-menu-vertical li.current a {
+    color: #e4e4e7;
+    background-color: #212121;
+    border: none;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+    background-color: #212121;
+    border: none;
+}
+
+/* Progressive nesting levels - 10 variations from dark to darker */
+/* Level 1 - Top level sections with dark green text */
+.wy-menu-vertical li.toctree-l1 > a {
+    background-color: #1a1a1a;
+    color: #5a8a00;
+    padding-left: 1em;
+}
+
+/* Level 2 - First nested level */
+.wy-menu-vertical li.toctree-l2 > a {
+    background-color: #1e1e1e !important;
+    color: #b5b5b5 !important;
+    padding-left: 2em;
+}
+
+/* Level 3 */
+.wy-menu-vertical li.toctree-l3 > a {
+    background-color: #222222 !important;
+    color: #b5b5b5 !important;
+    padding-left: 3em;
+}
+
+/* Level 4 */
+.wy-menu-vertical li.toctree-l4 > a {
+    background-color: #262626 !important;
+    color: #b5b5b5 !important;
+    padding-left: 4em;
+}
+
+/* Level 5 */
+.wy-menu-vertical li.toctree-l5 > a {
+    background-color: #2a2a2a !important;
+    color: #b5b5b5 !important;
+    padding-left: 5em;
+}
+
+/* Level 6 */
+.wy-menu-vertical li.toctree-l6 > a {
+    background-color: #2e2e2e !important;
+    color: #b5b5b5 !important;
+    padding-left: 6em;
+}
+
+/* Level 7 */
+.wy-menu-vertical li.toctree-l7 > a {
+    background-color: #323232 !important;
+    color: #b5b5b5 !important;
+    padding-left: 7em;
+}
+
+/* Level 8 */
+.wy-menu-vertical li.toctree-l8 > a {
+    background-color: #363636 !important;
+    color: #b5b5b5 !important;
+    padding-left: 8em;
+}
+
+/* Level 9 */
+.wy-menu-vertical li.toctree-l9 > a {
+    background-color: #3a3a3a !important;
+    color: #b5b5b5 !important;
+    padding-left: 9em;
+}
+
+/* Level 10 */
+.wy-menu-vertical li.toctree-l10 > a {
+    background-color: #3e3e3e !important;
+    color: #b5b5b5 !important;
+    padding-left: 10em;
+}
+
+/* Currently selected items - light green text */
+.wy-menu-vertical li.current > a {
+    background-color: #76b900 !important;
+    color: #ffffff !important;
+}
+
+/* Top level with children that's open (not selected, just open) */
+.wy-menu-vertical li.toctree-l1.current:not(.current-page) > a {
+    background-color: #1a1a1a !important;
+    color: #5a8a00 !important;
+}
+
+/* Level 2 with children that's open (not selected, just open) */
+.wy-menu-vertical li.toctree-l2.current:not(.current-page) > a {
+    background-color: #1e1e1e !important;
+    color: #5a8a00 !important;
+}
+
+/* Level 3 and deeper with children that's open */
+.wy-menu-vertical li.toctree-l3.current:not(.current-page) > a {
+    background-color: #222222 !important;
+    color: #b5b5b5 !important;
+}
+
+.wy-menu-vertical li.toctree-l4.current:not(.current-page) > a {
+    background-color: #262626 !important;
+    color: #b5b5b5 !important;
+}
+
+.wy-menu-vertical li.toctree-l5.current:not(.current-page) > a {
+    background-color: #2a2a2a !important;
+    color: #b5b5b5 !important;
+}
+
+/* Actual current page - bright green highlight */
+.wy-menu-vertical li.current > a {
+    background-color: #5a8a00 !important;
+    color: #ffffff !important;
+}
+
+/* Override for parent items that have children and aren't the actual page */
+.wy-menu-vertical li.toctree-l1.current:has(ul) > a {
+    background-color: #1a1a1a !important;
+    color: #5a8a00 !important;
+}
+
+.wy-menu-vertical li.toctree-l2.current:has(ul) > a {
+    background-color: #1e1e1e !important;
+    color: #5a8a00 !important;
+}
+
+/* But if it's the current page AND has children, highlight it */
+.wy-menu-vertical li.current:not(:has(li.current)) > a {
+    background-color: #5a8a00 !important;
+    color: #ffffff !important;
+}
+
+/* Ensure all toctree levels get highlighted when current */
+.wy-menu-vertical li.toctree-l1.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l2.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l3.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l4.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l5.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l6.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l7.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l8.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l9.current:not(:has(li.current)) > a,
+.wy-menu-vertical li.toctree-l10.current:not(:has(li.current)) > a {
+    background-color: #5a8a00 !important;
+    color: #ffffff !important;
+}
